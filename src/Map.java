@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class Map {
 
 	private ArrayList<Brick> bricks = new ArrayList<Brick>(); 
+	private ArrayList<String> strings = new ArrayList<String>();
 	private String filename;
 	
 	public Map(String filename){
@@ -23,6 +24,7 @@ public class Map {
 			String line;
 			while((line = bufferedReader.readLine()) != null){
 				finalString += line + "\n";
+				strings.add(line);
 			}
 			bufferedReader.close();
 		}catch(FileNotFoundException ex){

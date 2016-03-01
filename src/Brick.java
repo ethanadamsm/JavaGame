@@ -1,7 +1,9 @@
 public class Brick {
 
-	public Brick(int ){
-		
+	private int number;
+	
+	public Brick(int number){
+		this.number = number;
 	}
 	
 }
