@@ -10,11 +10,12 @@ public class Application extends JFrame {
 	private void initUI(){
 		add(new Board());
 		
-		setSize(640, 480);
+		setSize(800, 400);
 		
 		setTitle("Application");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		Map maps = new Map("map.txt");
 	}
 	
 	public static void main(String[] args){
